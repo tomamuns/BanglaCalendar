@@ -108,7 +108,7 @@ class BanglaDate
 	}
 	function CalculateMonthAndDay()
 	{
-		if($this->des_arr[$this->mon] < $this->day )
+		if( $this->day >= $this->des_arr[$this->mon] )
 		{
 			$this->ban_mon = 	$this->bangla_month[$this->mon];
 			$this->ban_day = 	$this->day - $this->des_arr[$this->mon] + 1; //Add 1 Day Exclusively
